@@ -3,9 +3,87 @@
 <head>
 <title> hi </title>
 <style>
+body {font-family: "Lucida Console", monospace;
+
+    background-color: pink;
+}
+
+
+
+
+/* Style the buttons inside the tab */
+
+div.tab button{
+    margin:auto;
+    background-color: #8123db;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    color:white;
+    border-radius:200px;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #9d76e2;
+    
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #9d76e2;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 10px 12px;
+    border-radius:250px;
+   margin:auto;
+    text-align:center;
+  
+   
+}
+
+#photo{
+    height:350px;
+    margin:auto;
+    float:left;
+    width:250px;}
+    
+
+#photo3{
+    height: 350px;
+    margin:auto;
+    float:left;
+    width:250px;}
+
+#photo4{
+    height: 400px;
+    width:250px;
+    margin:auto;
+    float:left;
+}
+    
+#quote{
+    height:300px;
+    width:425px;}
+    
+#photo5{
+    height:300px;
+    width:500px;}
+    
+#quote3{
+    height:250px;
+    width:500px;}
+    
 </style>
 </head>
 <body>
+<input type = "button" value = "connect" onclick="window.location.href='https://brittany1102.github.io/portfolio/films.html'">
 <h1><strong> Films/ TV SHOWS </strong></h1>
 <div class="tab">
   <button class="tablinks" onclick="openCategory(event, 'Posters/Trailers')" id="defaultOpen">Posters/Trailers</button>
@@ -61,87 +139,10 @@ function openCategory(evt, categoryName) {
     document.getElementById(categoryName).style.display = "block";
     evt.currentTarget.className += " active";
 }
+
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 </script>
      
 </body>
 </html> 
-Raw
- styles.css
-body {font-family: "Lucida Console", monospace;
-
-    background-color: pink;
-}
-
-
-
-
-/* Style the buttons inside the tab */
-
-div.tab button{
-    margin:auto;
-    background-color: #8123db;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
-    color:white;
-}
-
-/* Change background color of buttons on hover */
-div.tab button:hover {
-    background-color: #9d76e2;
-    
-}
-
-/* Create an active/current tablink class */
-div.tab button.active {
-    background-color: #9d76e2;
-}
-
-/* Style the tab content */
-.tabcontent {
-    display: none;
-    padding: 10px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-    margin:auto;
-    
-  
-   
-}
-
-#photo{
-    height:350px;
-    margin:auto;
-    float:left;
-    width:250px;}
-    
-
-#photo3{
-    height: 350px;
-    margin:auto;
-    float:left;
-    width:250px;}
-
-#photo4{
-    height: 400px;
-    width:250px;
-    margin:auto;
-    float:left;
-}
-    
-#quote{
-    height:300px;
-    width:425px;}
-    
-#photo5{
-    height:300px;
-    width:500px;}
-    
-#quote3{
-    height:250px;
-    width:500px;}
